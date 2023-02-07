@@ -22,4 +22,17 @@ FRP (Functional Reactive Programming).
 =======================
 Docker Database
 =======================
+> See Docker Compose
 
+> Depedencies
+yarn add -D prisma
+yarn add @prisma/client
+
+> Command
+npx prisma init
+npx prisma migrate dev --name <Name>
+npx prisma studio
+
+> Module
+nest g module prisma
+nest g service prisma --no-spec
