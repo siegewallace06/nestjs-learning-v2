@@ -36,3 +36,19 @@ npx prisma studio
 > Module
 nest g module prisma
 nest g service prisma --no-spec
+
+=======================
+Pipes
+=======================
+> Depedencies
+yarn add class-validator class-transformer
+
+> Apply in DTO
+
+> Don't Forget to apply the Pipe Globally, by adding this line on main.ts
+  app.useGlobalPipes(new ValidationPipe({
+    whitelist: true,
+  }));
+
+> Bug fixes from Auto Complete, please use this:
+import { ValidationPipe } from '@nestjs/common';
