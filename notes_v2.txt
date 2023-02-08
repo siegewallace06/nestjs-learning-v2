@@ -52,3 +52,11 @@ yarn add class-validator class-transformer
 
 > Bug fixes from Auto Complete, please use this:
 import { ValidationPipe } from '@nestjs/common';
+
+=======================
+Hashing
+=======================
+> For hashing password, we will use argon2
+
+> Depedencies
+yarn add argon2
