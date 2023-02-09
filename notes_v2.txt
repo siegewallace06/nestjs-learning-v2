@@ -20,6 +20,18 @@ FP (Functional Programming), and
 FRP (Functional Reactive Programming).
 
 =======================
+Third Party Modules
+=======================
+> Config Module
+Config module is used to load environment variables from .env file
+- Depedencies
+yarn add @nestjs/config
+- Import in root module
+import { ConfigModule } from '@nestjs/config';
+ConfigModule.forRoot({ isGlobal: true })
+
+
+=======================
 Docker Database
 =======================
 > See Docker Compose
@@ -66,3 +78,13 @@ Hashing
 
 > Depedencies
 yarn add argon2
+
+======================
+Authentication
+======================
+> dependencies
+yarn add @nestjs/passport passport @nestjs/jwt passport-jwt 
+(No need passport-local)
+
+> Dev Dependencies
+yarn add -D @types/passport-jwt
