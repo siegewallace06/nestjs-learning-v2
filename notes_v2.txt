@@ -37,6 +37,12 @@ npx prisma studio
 nest g module prisma
 nest g service prisma --no-spec
 
+> Scripts
+"prisma:dev:deploy": "prisma migrate deploy",
+"db:dev:rm": "docker-compose rm dev-db -s -f -v",
+"db:dev:up": "docker-compose up -d dev-db",
+"db:dev:restart": "yarn db:dev:rm && yarn db:dev:up && sleep 1 && yarn prisma:dev:deploy",
+
 =======================
 Pipes
 =======================
