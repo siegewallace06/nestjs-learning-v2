@@ -88,3 +88,12 @@ yarn add @nestjs/passport passport @nestjs/jwt passport-jwt
 
 > Dev Dependencies
 yarn add -D @types/passport-jwt
+
+=======================
+TestingModule
+=======================
+> Depedencies
+yarn add -D pactum
+
+> Run Test e2e
+yarn test:e2e
