@@ -94,6 +94,7 @@ TestingModule
 =======================
 > Depedencies
 yarn add -D pactum
+yarn add -D dotenv-cli
 
 > Run Test e2e
 yarn test:e2e
