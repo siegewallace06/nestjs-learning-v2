@@ -178,7 +178,8 @@ describe('App e2e', () => {
             Authorization: 'Bearer $S{accessToken}'
           })
           .expectStatus(200)
-          .inspect()
+          // .expectBodyContains(dto.firstName)
+          .inspect();
       });
     })
 
@@ -186,15 +187,29 @@ describe('App e2e', () => {
 
   describe('Bookmark', () => {
 
-    describe('Create Bookmark', () => { })
+    describe('Get Empty Bookmark', () => {
+      it('should get empty bookmark', () => {
+        return pactum
+          .spec()
+          .get('/bookmarks')
+          .withHeaders({
+            Authorization: 'Bearer $S{accessToken}'
+          })
+          .expectStatus(200)
+          // .expectBodyContains(dto.firstName)
+          .inspect();
+      });
+    })
 
-    describe('Get Bookmark', () => { })
-
-    describe('Get Bookmark by ID', () => { })
-
-    describe('Edit Bookmark', () => { })
-
-    describe('Delete Bookmark', () => { })
   })
 
-})
+  describe('Create Bookmark', () => { })
+
+  describe('Get Bookmark', () => { })
+
+  describe('Get Bookmark by ID', () => { })
+
+  describe('Edit Bookmark', () => { })
+
+  describe('Delete Bookmark', () => { })
+});
