@@ -22,11 +22,7 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-## Description
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation# **Overview**
+# **Overview**
 
 This repository contains a basic NestJS project written in TypeScript. The project is structured using the standard NestJS modular pattern and integrates Prisma ORM with a PostgreSQL database. Authentication is implemented with JWT tokens. Key scripts are defined in `package.json` and environment variables are stored in `.env` files.
 
